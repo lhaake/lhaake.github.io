@@ -10,8 +10,8 @@ You are **responsible** for scheduling time with your squad to seek approval for
 |---|---| ---|
 |Day 1 - Monday| Project Approval, Wireframes / Priority Matrix / Timeline Due, Begin Building Site | Complete
 |Day 2 - Tuesday| Core Application Structure (HTML, CSS) & Working with API | Complete
-|Day 3 - Wednesday| Working with API & Styling  | Incomplete
-|Day 4 - Thursday| MVP, Bug Fixes & Deployment to Github Pages | Incomplete
+|Day 3 - Wednesday| Working with API & Styling  | Complete
+|Day 4 - Thursday| MVP, Bug Fixes & Deployment to Github Pages | Complete
 |Day 5 - Friday| Final Touches, Update Proj Worksheet & Presentation | Incomplete
 
 ##  Research 
@@ -83,29 +83,29 @@ My [Google Sheet](https://docs.google.com/spreadsheets/d/1GozbvSSln3rtpnqxqOF7xp
 #### MVP
 | Component | Priority | Estimated Time | Actual Time | Status |
 | --- | :---: |  :---: | :---: | :---: |
-| Communication with Stack | H | 4hrs | hr |
-| HTML Structure | H | 2hrs | hr |
-| Bootstrap Structure | H | 5hrs | hr |
-| CSS Responsive | H | 3hrs | hr |
-| Content | M | 1hr | hr |  
-| Styling | M | 3hrs | hr | 
-| About Page | H | 1hr | hr |
-| Contact Form | H | 1hr | hr |
-| Footer | L | 1hr | hr |
+| Communication with Stack | H | 4hrs | 4hrs | Ongoing |
+| HTML Structure | H | 2hrs | 1hr | Complete |
+| Bootstrap Structure | H | 5hrs | 1hr | Complete |
+| CSS Responsive | H | 3hrs | 3hrs | Complete |
+| Content | M | 1hr | 1hr | Complete |
+| Styling | M | 3hrs | 5hrs | Complete |
+| About Page | H | 1hr | 1hr | Complete |
+| Contact Form | H | 1hr | 1hr | Complete |
+| Footer | L | 1hr | 0.5hr | Complete |
 | Pull projects data using API | H | 3hrs | 1hr| Complete |
-| Render projects data on website | H | 4hrs | 1.5-2hr | Complete |
-| Style projects data | H | 4hrs | 2 hr | In progress |
-| Setup and Deployment to Github Pages | H | 3.5hrs |  hr |
-| Project previews & testing | H | 4.5hrs |  hr |
+| Render projects data on website | H | 4hrs | 1.5hr | Complete |
+| Style projects data | H | 4hrs | 5hrs | Complete |
+| Setup and Deployment to Github Pages | H | 3.5hrs | 0.5 hr | Complete |
+| Project previews & testing | H | 4.5hrs |  hr | In progress |
 | Total |  | 40hrs| hrs |
 
 #### PostMVP
-| Component | Priority | Estimated Time | Actual Time |
+| Component | Priority | Estimated Time | Actual Time | Notes |
 | --- | :---: |  :---: | :---: | 
-| Skills Section | M | 4hr | hr |
-| Edit Mobile Nav | L | 3hr | hr |
-| Add to Contact form | L | 4hr | hr |
-| JS/CSS Design | L | 4hr | hr |
+| Skills Section | M | 4hr | hr | Didn't work on |
+| Edit Mobile Nav | L | 3hr | hr | Didn't work on |
+| Add to Contact form | L | 4hr | hr | Didn't work on |
+| JS/CSS Design | L | 4hr | 1hr | Added Smooth Scroll |
 | Total |  | 20hrs| hrs |
 
 -------------------------------------------------------------
