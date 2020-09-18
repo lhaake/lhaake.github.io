@@ -178,6 +178,8 @@ const render = (projectsArray) => {
 - Polish my projects
 - Add to my About section, maybe include a Bio photo
 - Try out bootstrap cards for styling projects
+-  Create a Skills section (programming langauges and technologies)
+-  On Mobile Nav, edit name in left corner to show my initials
 - Create the CSS Grid Image Gallery pproject with my own photographs
 - Work on the contact form functionality 
 - Resolve Issue: Edit the header photo - stretching when adjusting the height so that the image doesn’t take up so much space. I may add an overlay of transparency or text on the image. 
