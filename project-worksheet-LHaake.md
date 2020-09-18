@@ -91,7 +91,7 @@ My [Google Sheet](https://docs.google.com/spreadsheets/d/1GozbvSSln3rtpnqxqOF7xp
 | Style projects data | H | 4hrs | 5hrs | Complete |
 | Setup and Deployment to Github Pages | H | 3.5hrs | 0.5 hr | Complete |
 | Project previews & testing | H | 4.5hrs |  2hr | Complete |
-| Total |  | 40hrs| hrs | |
+| Total |  | 40hrs| 30hrs | |
 
 #### PostMVP
 | Component | Priority | Estimated Time | Actual Time | Notes |
@@ -102,7 +102,6 @@ My [Google Sheet](https://docs.google.com/spreadsheets/d/1GozbvSSln3rtpnqxqOF7xp
 | JS/CSS Design | L | 4hr | 1hr | Added Smooth Scroll |
 | Total |  | 20hrs| 1hr | |
 
--------------------------------------------------------------
 -------------------------------------------------------------
 
 ## Additional Libraries
@@ -158,7 +157,7 @@ const render = (projectsArray) => {
 
 ## Issues and Resolutions
 
-#### Issue 1: pushing to my GitHub repo
+#### Issue 1: Pushing to my personal GitHub repo
 **ERROR**: error: failed to push some refs to 'https://github.com.lhaake/Project-1.git' Updates were rejected because the remote contains work that you do not have locally.  _My Notes:_ I think I caused this error when I was working on a new layout for my site and deleted files on my repo (such as styles.css), and the remote and local didn't match.                        
 **RESOLUTION**: Stack helped me by running the command in the terminal: ``` git push origin master --force ``` 
 
@@ -167,7 +166,7 @@ const render = (projectsArray) => {
 **RESOLUTION**: Stack helped me by sending a [MDN article](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach) about the forEach() array method, and that I could use string interpolation to create these classes for each item in the array.  
 
 
-### Future Direction & Ideas
+## Future Direction & Ideas
 - Links to my Codepen projects
 - Polish my projects
 - Add to my About section, maybe include a Bio photo
