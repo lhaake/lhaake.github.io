@@ -97,16 +97,16 @@ My [Google Sheet](https://docs.google.com/spreadsheets/d/1GozbvSSln3rtpnqxqOF7xp
 | Style projects data | H | 4hrs | 5hrs | Complete |
 | Setup and Deployment to Github Pages | H | 3.5hrs | 0.5 hr | Complete |
 | Project previews & testing | H | 4.5hrs |  hr | In progress |
-| Total |  | 40hrs| hrs |
+| Total |  | 40hrs| hrs | |
 
 #### PostMVP
 | Component | Priority | Estimated Time | Actual Time | Notes |
-| --- | :---: |  :---: | :---: | 
+| --- | :---: |  :---: | :---: | :---: | 
 | Skills Section | M | 4hr | hr | Didn't work on |
 | Edit Mobile Nav | L | 3hr | hr | Didn't work on |
 | Add to Contact form | L | 4hr | hr | Didn't work on |
 | JS/CSS Design | L | 4hr | 1hr | Added Smooth Scroll |
-| Total |  | 20hrs| hrs |
+| Total |  | 20hrs| hrs | |
 
 -------------------------------------------------------------
 ## Progress Notes 
