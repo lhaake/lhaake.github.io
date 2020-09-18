@@ -2,17 +2,13 @@
 
 ## Project Schedule
 
-This schedule will be used to keep track of your progress throughout the week and align with our expectations.  
-
-You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day.
-
 |  Day | Deliverable | Status
 |---|---| ---|
 |Day 1 - Monday| Project Approval, Wireframes / Priority Matrix / Timeline Due, Begin Building Site | Complete
 |Day 2 - Tuesday| Core Application Structure (HTML, CSS) & Working with API | Complete
 |Day 3 - Wednesday| Working with API & Styling  | Complete
 |Day 4 - Thursday| MVP, Bug Fixes & Deployment to Github Pages | Complete
-|Day 5 - Friday| Final Touches, Update Proj Worksheet & Presentation | Incomplete
+|Day 5 - Friday| Final Touches, Update Proj Worksheet & Presentation | Complete
 
 ##  Research 
 Spend sometime and look at a few portfolio  and/or web sites to find some design or functionality that you would like to incorporate into your own portfolio.  Record those findings below:
@@ -28,9 +24,7 @@ Link To Site  | One Thing I'd Like To Incorporate |
 
 ## Project Description
 
-For my portfolio site, I would like to build a website that is simplisitic and clear. 
-
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
+For my portfolio site, my goal was to build a website that is simplistic, clear, readable, easy to use and meets the requirements. 
 
 ## Google Sheet
 
@@ -83,20 +77,20 @@ My [Google Sheet](https://docs.google.com/spreadsheets/d/1GozbvSSln3rtpnqxqOF7xp
 #### MVP
 | Component | Priority | Estimated Time | Actual Time | Status |
 | --- | :---: |  :---: | :---: | :---: |
-| Communication with Stack | H | 4hrs | 4hrs | Ongoing |
+| Communication with Stack | H | 4hrs | 4hrs | Complete |
 | HTML Structure | H | 2hrs | 1hr | Complete |
 | Bootstrap Structure | H | 5hrs | 1hr | Complete |
-| CSS Responsive | H | 3hrs | 3hrs | Complete |
+| CSS Responsive | H | 3hrs | 6hrs | Complete |
 | Content | M | 1hr | 1hr | Complete |
-| Styling | M | 3hrs | 5hrs | Complete |
+| Styling | M | 3hrs | 4hrs | Complete |
 | About Page | H | 1hr | 1hr | Complete |
 | Contact Form | H | 1hr | 1hr | Complete |
 | Footer | L | 1hr | 0.5hr | Complete |
 | Pull projects data using API | H | 3hrs | 1hr| Complete |
-| Render projects data on website | H | 4hrs | 1.5hr | Complete |
+| Render projects data on website | H | 4hrs | 2hr | Complete |
 | Style projects data | H | 4hrs | 5hrs | Complete |
 | Setup and Deployment to Github Pages | H | 3.5hrs | 0.5 hr | Complete |
-| Project previews & testing | H | 4.5hrs |  hr | In progress |
+| Project previews & testing | H | 4.5hrs |  2hr | Complete |
 | Total |  | 40hrs| hrs | |
 
 #### PostMVP
@@ -106,45 +100,78 @@ My [Google Sheet](https://docs.google.com/spreadsheets/d/1GozbvSSln3rtpnqxqOF7xp
 | Edit Mobile Nav | L | 3hr | hr | Didn't work on |
 | Add to Contact form | L | 4hr | hr | Didn't work on |
 | JS/CSS Design | L | 4hr | 1hr | Added Smooth Scroll |
-| Total |  | 20hrs| hrs | |
+| Total |  | 20hrs| 1hr | |
 
 -------------------------------------------------------------
-## Progress Notes 
-
-### Ideas
-- For footer: change to show a hover color 
-- Add CSS property to Nav items, scroll-behavior: smooth
-- Look into Google Fonts and ColorHunt for styling  
-- Add Text overlay on header image with my name ?
-
-### Issues 
-- Main photo - stretching when adjusting the height to rem
-
-### Other Ideas for PostMVP
-- Link to Codepen projects
-- Bio image
-- Image Gallery 
-
 -------------------------------------------------------------
-_Update sections below later_ 
 
 ## Additional Libraries
- Use this section to list all supporting libraries and thier role in the project. 
- -  Bootstrap
+ -  jQuery - JS Library
+ -  Bootstrap - CSS Library
+ -  Font Awesome - Icon Library
 
 ## Code Snippet
 
-Use this section to include a brief code snippet of functionality that you are proud of an a brief description  
+Working on the render function involved applying different concepts we covered in week 1 and 2 about objects, function expressions, arrays, array methods and jQuery. 
+
+- I spent some time making sure I understood how the data was being passed into render() from the return statement and that it was an array of objects, and would need to grab the object keys using dot notation. Using a forEach() method would be good for iterating over the array. 
+- I visualized appending the data on the page in steps that built on one another. 
+    - Creating a div, then creating a h3, p and img tag to place in the div
+    - Adding the div to the article element
+    - Grabbing the data from Google Sheets and adding to particular elements (h3, p, img)
 
 ```
-function reverse(string) {
-	// here is the code to reverse a string of text
+// Create function that adds Projects to DOM
+
+const render = (projectsArray) => {
+    console.log("Testing the projectsArray", projectsArray)
+
+    // Using forEach() to append each project to page 
+    projectsArray.forEach((project, index) => {
+        // create new HTML elements and store in variables 
+        const $projectDiv = $("<div>");
+        const $titleText = $("<h3>");
+        const $descriptionText = $("<p>");
+        const $img = $("<img>");
+
+        // append HTML elements to the div
+        $projectDiv.append($titleText);
+        $projectDiv.append($img);
+        $projectDiv.append($descriptionText);
+
+        // add a class to the div 
+        $projectDiv.addClass(`proj-div-${index}`)
+
+        // add the div to the article and a new class to article
+        $("article").append($projectDiv).addClass   ("projects-container");
+
+        // Append the projects data .title, .image and .description to the speciifc HTML elements
+        $titleText.append(project.title).addClass(`proj-title-${index}`);
+        $img.append(project.image).attr("src", project.image).addClass(`proj-img-${index}`);
+        $descriptionText.append(project.description).addClass(`proj-description-${index}`);
+
+        console.log(project);
+    })
 }
+
 ```
 
 ## Issues and Resolutions
- Use this section to list of all major issues encountered and their resolution.
 
-#### Issue pushing to my GitHub repo
+#### Issue 1: pushing to my GitHub repo
 **ERROR**: error: failed to push some refs to 'https://github.com.lhaake/Project-1.git' Updates were rejected because the remote contains work that you do not have locally.  _My Notes:_ I think I caused this error when I was working on a new layout for my site and deleted files on my repo (such as styles.css), and the remote and local didn't match.                        
 **RESOLUTION**: Stack helped me by running the command in the terminal: ``` git push origin master --force ``` 
+
+#### Issue 2: Creating unique classes in render() function 
+**ISSUE**: My issue was I wasn't sure how to target a specific item in my ProjectsArray while using the forEach() array method. I'm familair with targeting array items using bracket notation and a loop counter variable [i]. I wanted to be able to add unique classes to my project data (div's, images, etc) on my page and could style them individually.               
+**RESOLUTION**: Stack helped me by sending a [MDN article](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach) about the forEach() array method, and that I could use string interpolation to create these classes for each item in the array.  
+
+
+### Future Direction & Ideas
+- Links to my Codepen projects
+- Polish my projects
+- Add to my About section, maybe include a Bio photo
+- Try out bootstrap cards for styling projects
+- Create the CSS Grid Image Gallery pproject with my own photographs
+- Work on the contact form functionality 
+- Resolve Issue: Edit the header photo - stretching when adjusting the height so that the image doesn’t take up so much space. I may add an overlay of transparency or text on the image. 
