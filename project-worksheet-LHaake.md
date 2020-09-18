@@ -96,10 +96,10 @@ My [Google Sheet](https://docs.google.com/spreadsheets/d/1GozbvSSln3rtpnqxqOF7xp
 #### PostMVP
 | Component | Priority | Estimated Time | Actual Time | Notes |
 | --- | :---: |  :---: | :---: | :---: | 
-| Skills Section | M | 4hr | hr | Didn't work on |
-| Edit Mobile Nav | L | 3hr | hr | Didn't work on |
-| Add to Contact form | L | 4hr | hr | Didn't work on |
-| JS/CSS Design | L | 4hr | 1hr | Added Smooth Scroll |
+| Skills Section | M | 4hr |  | Didn't work on |
+| Edit Mobile Nav | L | 3hr |  | Didn't work on |
+| Add to Contact form | L | 4hr | | Didn't work on |
+| JS/CSS Design | L | 4hr | | Added Smooth Scroll |
 | Total |  | 20hrs| 1hr | |
 
 -------------------------------------------------------------
@@ -158,12 +158,19 @@ const render = (projectsArray) => {
 ## Issues and Resolutions
 
 #### Issue 1: Pushing to my personal GitHub repo
-**ERROR**: error: failed to push some refs to 'https://github.com.lhaake/Project-1.git' Updates were rejected because the remote contains work that you do not have locally.  _My Notes:_ I think I caused this error when I was working on a new layout for my site and deleted files on my repo (such as styles.css), and the remote and local didn't match.                        
+**ERROR**: error: failed to push some refs to 'https://github.com.lhaake/Project-1.git' Updates were rejected because the remote contains work that you do not have locally.  _My Notes:_ I think I caused this error when I was working on a new layout for my site and deleted files on my repo (such as styles.css), and the remote and local didn't match.                    
 **RESOLUTION**: Stack helped me by running the command in the terminal: ``` git push origin master --force ``` 
 
-#### Issue 2: Creating unique classes in render() function 
-**ISSUE**: My issue was I wasn't sure how to target a specific item in my ProjectsArray while using the forEach() array method. I'm familair with targeting array items using bracket notation and a loop counter variable [i]. I wanted to be able to add unique classes to my project data (div's, images, etc) on my page and could style them individually.               
+
+#### Issue 2: Creating unique classes for projects data
+**ISSUE**: My issue was I wasn't sure how to target a specific item in my ProjectsArray while using the forEach() array method. I'm familair with targeting array items using bracket notation and a loop counter variable [i] within a for or while loop. I wanted to be able to add unique classes to my project data (div's, images, etc) on my page and style them individually.               
 **RESOLUTION**: Stack helped me by sending a [MDN article](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach) about the forEach() array method, and that I could use string interpolation to create these classes for each item in the array.  
+
+### One thing that was truly challenging that you worked through and how you worked through it:
+- Styling the Projects data. Outside of knowing how many rows and columns I was going to have for Mobile, Tablet and Desktop versions, I didn’t plan my CSS well enough. I ended up trying out a lot of different possibilities - using Grid, Flexbox, Grid & Flexbox together. I think some of this confusion for me is that Grid and Flexbox are new and I’m still learning how certain properties work, along with the considerations for responsive - image size and fitting on the page, centering content, alignment to other items. 
+
+### One thing that you couldn’t resolve or implement due to time or skillset
+- Using bootstrap Cards classes and code to style my projects data. I ran out of time before trying this out. My priority was to pull the data and display it on the page. To make sure I had time for the rest of the project, I opted to use CSS instead of attempting to implement the Bootstrap classes and structure. 
 
 
 ## Future Direction & Ideas
@@ -174,3 +181,12 @@ const render = (projectsArray) => {
 - Create the CSS Grid Image Gallery pproject with my own photographs
 - Work on the contact form functionality 
 - Resolve Issue: Edit the header photo - stretching when adjusting the height so that the image doesn’t take up so much space. I may add an overlay of transparency or text on the image. 
+
+## Lessons Learned 
+- Use VS Code split screen!
+- Spend more time planning my layout with CSS 
+- There is always something to edit with CSS — hours fly by when styling the page. 
+- Sticking to a schedule and daily goals are helpful for time management 
+- Take breaks
+- Commenting code 
+- Prioritizing based on the most challenging parts
